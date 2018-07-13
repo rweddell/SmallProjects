@@ -5,7 +5,7 @@ import random
 
 
 larry = BinaryTree()	
-	
+
 grid = larry.on(Grid(4, 4))
 
 print(grid)
