@@ -1,15 +1,16 @@
+
+from Distances import Distances
+
+
 class Cell(object):
-    row = 0
-    column = 0
-    north = None
-    south = None
-    east = None
-    west = None
-    links = {}
 
     def __init__(self, row, column):
         self.row = row
         self.column = column
+        self.north = None
+        self.south = None
+        self.east = None
+        self.west = None
         self.links = {}
 
     def __str__(self):
@@ -22,13 +23,11 @@ class Cell(object):
         return "Cell" + self.__str__()
 
     def link(self, cell, bidi=True):
-        # if cell is self.north or cell is self.south or cell is self.east or cell is self.west and cell is not None:
         self.links[cell] = True
         if bidi == True:
             cell.link(self, False)
 
     def unlink(self, cell, bidi=True):
-        # this is wrong, but I'll deal with it later cuz I don't need it right now
         del self.links[cell]
         if bidi == True:
             cell.unlink(self, False)
@@ -37,13 +36,8 @@ class Cell(object):
         return self.links
 
     def is_linked(self, cell):
-        # IS THE PROBLEM HERE????!?!
-        # print(cell)
-        # print(self.links)
-        # print(cell in self.links.keys())
         if cell is not None:
             return cell in self.links.keys()
-            #print("We got None")
         else:
             return False
 
@@ -58,3 +52,19 @@ class Cell(object):
         if self.west is not None:
             nlist.append(self.west)
         return nlist
+        
+    def distances(self):
+        distlist = Distances(self)
+        frontier = [self]
+        
+        while frontier:
+            new_frontier = []
+            for current in frontier:
+                for cell in current.links:
+                    if cell in distlist.get_cells():
+                        pass
+                    else:
+                        distlist.set_distance(cell, distlist.get_dist(current) + 1)
+                        new_frontier.append(cell)    
+            frontier = new_frontier
+        return distlist

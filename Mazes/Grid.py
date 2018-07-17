@@ -1,11 +1,9 @@
 from Cell import Cell
 from random import randint
+import png
 
 
 class Grid(object):
-    rows = 0
-    columns = 0
-    grid = []
 
     def __init__(self, rows, columns):
         self.rows = rows
@@ -50,27 +48,44 @@ class Grid(object):
         for row in self.each_row():
             for cell in row:
                 yield cell
+    
+    def contents_of(cell):
+        return " "
 
     def __str__(self):
         output = "+" + "---+" * self.columns + "\n"
         for row in self.each_row():
             line = "|"
             bottom = "+"
-            # accum = ""
             for cell in row:
-                # accum += "+"
-                body = "   "
+                body = " " + self.contents_of(cell) + " "
                 east_bound = "|"
                 south_bound = "---"
                 corner = '+'
                 if cell.is_linked(cell.east) == True:
-                    # print("east " + str(cell.is_linked(cell.east)))
                     east_bound = " "
                 line = line + body + east_bound
                 if cell.is_linked(cell.south) == True:
-                    # print("south " + str(cell.is_linked(cell.south)))
                     south_bound = "   "
                 bottom = bottom + south_bound + corner
-            # print(accum)
             output = output + line + "\n" + bottom + "\n"
         return output
+        
+    def __repr__(self):
+        return self.__str__()
+    
+    #Haven't figured this out yet
+    """
+    def to_png(size):
+        width = size * self.columns
+        length = size * self.rows
+        bg = Color.WHITE
+        wall = Color.BLACK
+        writ = png.Writer()
+        for cell in self.each_cell():
+            x1 = cell.column * size
+            x2 = (cell.column+1) * size
+            y1 = cell.row * size
+            y2 = (cell.column+1) * size
+            writ.write
+    """ 
