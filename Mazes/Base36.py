@@ -1,5 +1,5 @@
-# http://stackoverflow.com/a/1181922
 
+# http://stackoverflow.com/a/1181922
 
 def encode(number, alphabet='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'):
     """Converts an integer to a base36 string."""
@@ -24,3 +24,4 @@ def encode(number, alphabet='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'):
 
 def decode(number):
     return int(number, 36)
+    

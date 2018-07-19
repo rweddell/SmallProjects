@@ -1,7 +1,6 @@
 from Cell import Cell
 from random import randint
-import png
-
+from PIL import Image, ImageDraw
 
 class Grid(object):
 
@@ -10,6 +9,7 @@ class Grid(object):
         self.columns = columns
         self.prepare_grid()
         self.configure_cells()
+        self.size = self.get_size()
 
     def prepare_grid(self):
         self.grid = [[0 for x in range(self.rows)] for y in range(self.columns)]
@@ -35,9 +35,9 @@ class Grid(object):
             return self.grid[row][column]
 
     def random_cell(self):
-        return self.grid[randint(0, rows)][randint(0, columns)]
+        return self.grid[randint(0, self.rows-1)][randint(0, self.columns-1)]
 
-    def size(self):
+    def get_size(self):
         return self.rows * self.columns
 
     def each_row(self):
@@ -45,11 +45,11 @@ class Grid(object):
             yield row
 
     def each_cell(self):
-        for row in self.each_row():
+        for row in self.grid:
             for cell in row:
                 yield cell
     
-    def contents_of(cell):
+    def contents_of(self, cell):
         return " "
 
     def __str__(self):
@@ -62,10 +62,10 @@ class Grid(object):
                 east_bound = "|"
                 south_bound = "---"
                 corner = '+'
-                if cell.is_linked(cell.east) == True:
+                if cell.is_linked(cell.east):
                     east_bound = " "
                 line = line + body + east_bound
-                if cell.is_linked(cell.south) == True:
+                if cell.is_linked(cell.south):
                     south_bound = "   "
                 bottom = bottom + south_bound + corner
             output = output + line + "\n" + bottom + "\n"
@@ -74,18 +74,30 @@ class Grid(object):
     def __repr__(self):
         return self.__str__()
     
-    #Haven't figured this out yet
-    """
-    def to_png(size):
+    def to_png(self, size = 50):
+        """
+        Creates a png file of maze in black/white
+        :param size:
+        :return: image object
+        """
         width = size * self.columns
-        length = size * self.rows
-        bg = Color.WHITE
-        wall = Color.BLACK
-        writ = png.Writer()
+        height = size * self.rows
+        dimensions = (width, height)
+        bg = 255
+        wall = 0
+        img = Image.new('L', dimensions, bg)
+        drw = ImageDraw.Draw(img)
         for cell in self.each_cell():
             x1 = cell.column * size
             x2 = (cell.column+1) * size
             y1 = cell.row * size
-            y2 = (cell.column+1) * size
-            writ.write
-    """ 
+            y2 = (cell.row+1) * size
+            if not cell.north:
+                drw.line(((x1, y1), (x2, y1)), wall, 2)
+            if not cell.west:
+                drw.line(((x1, y1), (x1, y2)), wall, 2)
+            if not cell.is_linked(cell.east):
+                drw.line(((x2, y1), (x2, y2)), wall, 2)
+            if not cell.is_linked(cell.south):
+                drw.line(((x1, y2), (x2, y2)), wall, 2)
+        return img
