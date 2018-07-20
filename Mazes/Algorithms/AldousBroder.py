@@ -1,6 +1,7 @@
 
 import random
 
+
 class AldousBroder:
     
     def on(self, grid):

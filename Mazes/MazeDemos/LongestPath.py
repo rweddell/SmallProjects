@@ -1,6 +1,6 @@
 
-from DistanceGrid import DistanceGrid
-from BinaryTree import BinaryTree
+from Foundations.DistanceGrid import DistanceGrid
+from Algorithms.BinaryTree import BinaryTree
 
 grid = DistanceGrid(5, 5)
 

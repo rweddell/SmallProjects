@@ -1,6 +1,6 @@
 
-import Base36
-from Grid import Grid
+import Foundations.Base36 as Base36
+from Foundations.Grid import Grid
 
 class DistanceGrid(Grid):
 

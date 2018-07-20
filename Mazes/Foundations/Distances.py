@@ -5,6 +5,8 @@ class Distances:
         self.root = root
         self.cells = {}
         self.cells[root] = 0
+        self.max_path()
+        self.max_dist = 0
         
     def get_dist(self, cell):
         """
@@ -36,9 +38,9 @@ class Distances:
     def max_path(self):
         max_dist = 0
         max_cell = self.root
-        for cell in self.cells.keys():   #TypeError: 'Cell' object is not iterable
+        for cell in self.cells.keys():
             if self.cells[cell] > max_dist:
                 max_cell = cell
                 max_dist = self.cells[cell]
-        return (max_dist, max_cell)
-        
+        self.max_dist = max_dist
+        return (max_cell, max_dist)

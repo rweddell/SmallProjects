@@ -1,6 +1,7 @@
-from Cell import Cell
+from Foundations.Cell import Cell
 from random import randint
 from PIL import Image, ImageDraw
+
 
 class Grid(object):
 
@@ -51,6 +52,9 @@ class Grid(object):
     
     def contents_of(self, cell):
         return " "
+        
+    def bg_color(self, cell):
+        return None
 
     def __str__(self):
         output = "+" + "---+" * self.columns + "\n"
@@ -74,30 +78,34 @@ class Grid(object):
     def __repr__(self):
         return self.__str__()
     
-    def to_png(self, size = 50):
+    def to_png(self, size=50):
         """
-        Creates a png file of maze in black/white
-        :param size:
+        Creates a png file of maze
+        :param size: 50 is default
         :return: image object
         """
         width = size * self.columns
         height = size * self.rows
         dimensions = (width, height)
-        bg = 255
-        wall = 0
-        img = Image.new('L', dimensions, bg)
+        bg = (255, 255, 255)
+        wall = (0, 0, 0)
+        img = Image.new('RGBA', dimensions, bg)
         drw = ImageDraw.Draw(img)
         for cell in self.each_cell():
             x1 = cell.column * size
             x2 = (cell.column+1) * size
             y1 = cell.row * size
             y2 = (cell.row+1) * size
+            color = self.bg_color(cell)
+            if color:
+                drw.rectangle(((x1, y1), (x2, y2)), color)
+            # TODO: walls are not drawn when maps are colored
             if not cell.north:
-                drw.line(((x1, y1), (x2, y1)), wall, 2)
+                drw.line(((x1, y1), (x2, y1)), wall, 5)
             if not cell.west:
-                drw.line(((x1, y1), (x1, y2)), wall, 2)
+                drw.line(((x1, y1), (x1, y2)), wall, 5)
             if not cell.is_linked(cell.east):
-                drw.line(((x2, y1), (x2, y2)), wall, 2)
+                drw.line(((x2, y1), (x2, y2)), wall, 5)
             if not cell.is_linked(cell.south):
-                drw.line(((x1, y2), (x2, y2)), wall, 2)
+                drw.line(((x1, y2), (x2, y2)), wall, 5)
         return img

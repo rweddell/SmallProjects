@@ -1,6 +1,6 @@
 
-from Grid import Grid
-from AldousBroder import AldousBroder
+from Foundations.Grid import Grid
+from Algorithms.AldousBroder import AldousBroder
 
 
 lester = AldousBroder()

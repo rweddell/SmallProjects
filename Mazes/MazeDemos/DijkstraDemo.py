@@ -4,9 +4,9 @@ Creates a simple solution to a maze using
 Dijkstra's algorithm.
 """
 
-from DistanceGrid import DistanceGrid
-from AldousBroder import AldousBroder
-from BinaryTree import BinaryTree
+from Foundations.DistanceGrid import DistanceGrid
+from Algorithms.AldousBroder import AldousBroder
+from Algorithms.BinaryTree import BinaryTree
 
 larry = AldousBroder()
 

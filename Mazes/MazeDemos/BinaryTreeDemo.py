@@ -1,6 +1,6 @@
 
-from Grid import Grid
-from BinaryTree import BinaryTree
+from Foundations.Grid import Grid
+from Algorithms.BinaryTree import BinaryTree
 import random
 
 

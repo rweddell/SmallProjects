@@ -1,6 +1,6 @@
 
-from Grid import Grid
-from Sidewinder import Sidewinder
+from Foundations.Grid import Grid
+from Algorithms.Sidewinder import Sidewinder
 import random
 
 

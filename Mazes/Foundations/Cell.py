@@ -1,5 +1,5 @@
 
-from Distances import Distances
+from Foundations.Distances import Distances
 
 
 class Cell(object):
