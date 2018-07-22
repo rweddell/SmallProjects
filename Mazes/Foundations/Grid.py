@@ -99,7 +99,6 @@ class Grid(object):
             color = self.bg_color(cell)
             if color:
                 drw.rectangle(((x1, y1), (x2, y2)), color)
-            # TODO: walls are not drawn when maps are colored
             if not cell.north:
                 drw.line(((x1, y1), (x2, y1)), wall, 5)
             if not cell.west:
