@@ -1,6 +1,6 @@
 
-from Foundations.Grid import Grid
 from Algorithms.HuntAndKill import HuntAndKill as hk
+from Foundations.Grid import Grid
 
 jeremy = hk()
 

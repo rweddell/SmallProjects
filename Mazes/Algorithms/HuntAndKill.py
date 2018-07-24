@@ -6,9 +6,7 @@ class HuntAndKill:
     def on(self, grid):
         current = grid.random_cell()
         while current:
-            unvisited = []
-            for neighbor in current.neighbors():
-                unvisited.append(neighbor)
+            unvisited = [neighbor for neighbor in current.neighbors() if not neighbor.links]
             if unvisited:
                 neighbor = choice(unvisited)
                 current.link(neighbor)
@@ -16,9 +14,7 @@ class HuntAndKill:
             else:
                 current = None
                 for cell in grid.each_cell():
-                    visited = []
-                    for neighbor in cell.neighbors():
-                        visited.append(neighbor)
+                    visited = [neighbor for neighbor in cell.neighbors() if neighbor.links]
                     if not cell.links and visited:
                         current = cell
                         tolink = choice(visited)

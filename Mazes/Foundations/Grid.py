@@ -1,3 +1,4 @@
+
 from Foundations.Cell import Cell
 from random import randint
 from PIL import Image, ImageDraw
@@ -12,6 +13,16 @@ class Grid(object):
         self.configure_cells()
         self.size = self.get_size()
 
+    def __eq__(self, other):
+        if isinstance(other, self.__class__()):
+            return self.deadends() == other.deadends()
+        return False
+
+    def __ne__(self, other):
+        if isinstance(other, self.__class__()):
+            return self.deadends() != other.deadends()
+        return True
+    
     def prepare_grid(self):
         self.grid = [[0 for x in range(self.rows)] for y in range(self.columns)]
         for i in range(0, self.rows):
@@ -77,6 +88,13 @@ class Grid(object):
         
     def __repr__(self):
         return self.__str__()
+
+    def deadends(self):
+        count = 0
+        for cell in self.each_cell():
+            if len(cell.links) == 1:
+                count +=1
+        return count
     
     def to_png(self, size=50):
         """

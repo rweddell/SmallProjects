@@ -2,8 +2,9 @@
 from Foundations.ColoredGrid import ColoredGrid
 from Algorithms.AldousBroder import AldousBroder
 from Algorithms.Wilsons import Wilsons
+from Algorithms.HuntAndKill import HuntAndKill as hk
 
-george = Wilsons()
+george = hk()
 
 grid = george.on(ColoredGrid(20,20))
 
