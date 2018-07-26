@@ -1,7 +1,6 @@
 
 from Foundations.Distances import Distances
 
-
 class Cell(object):
 
     def __init__(self, row, column):
@@ -56,7 +55,6 @@ class Cell(object):
     def distances(self):
         distlist = Distances(self)
         frontier = [self]
-        
         while frontier:
             new_frontier = []
             for current in frontier:

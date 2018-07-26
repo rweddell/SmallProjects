@@ -2,17 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="127bc862-a364-430d-b46f-47099637803a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Algorithms/RecursiveBacktracker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AsciiMask.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Foundations/Mask.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Foundations/MaskedGrid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MaskDemo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RecBacDemo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/HuntAndKill.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/HuntAndKill.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/AldousBroder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/AldousBroder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Foundations/Cell.py" beforeDir="false" afterPath="$PROJECT_DIR$/Foundations/Cell.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Foundations/Grid.py" beforeDir="false" afterPath="$PROJECT_DIR$/Foundations/Grid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MazeDemos/ColoringDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/MazeDemos/ColoringDemo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MazeDemos/HKDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/MazeDemos/HKDemo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MazeDemos/WIlsonsDemo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MazeDemos/coloredmaze.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coloredmaze.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mazeimage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wilson.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeDemos/AldousBroderDemo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeDemos/BinaryTreeDemo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeDemos/ColoringDemo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeDemos/CountDeadends.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeDemos/DijkstraDemo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeDemos/HKDemo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeDemos/LongestPath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeDemos/SidewinderDemo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeDemos/WilsonsDemo.py.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MazeDemos/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/ApplicationSettings - Copy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/ApplicationSettings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/Cmd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/ColorSettings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/EventName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/Gui.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/GuiWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/ICommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/IDialogChoice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/IGuiWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/IPaintController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/IShape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/InvalidUIException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/JPaint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/JPaintController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/MouseMode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/PaintCanvas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/SelectColorCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/SelectShapeCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/SelectShapeCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/ShadeSettings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/ShadingType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/ShapeSettings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/UIFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/UIModule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/UISelector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/UIType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwJPaint/out/production/rwJPaint/README.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,76 +63,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BinaryTreeDemo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MazeDemos/BinaryTreeDemo.py">
+      <file leaf-file-name="Mask.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Foundations/Mask.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="500">
+              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ColoringDemo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MazeDemos/ColoringDemo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountDeadends.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MazeDemos/CountDeadends.py">
+        <entry file="file://$PROJECT_DIR$/ColoringDemo.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+              <folding>
+                <element signature="e#1#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DijkstraDemo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MazeDemos/DijkstraDemo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HKDemo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MazeDemos/HKDemo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LongestPath.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MazeDemos/LongestPath.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SidewinderDemo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MazeDemos/SidewinderDemo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WilsonsDemo.py.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MazeDemos/WilsonsDemo.py.py">
+      <file leaf-file-name="AsciiMask.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AsciiMask.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding>
-                <element signature="e#1#28#0" expanded="true" />
+                <element signature="e#1#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MaskedGrid.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Foundations/MaskedGrid.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="580">
+              <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+              <folding>
+                <element signature="e#1#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MaskDemo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MaskDemo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+              <folding>
+                <element signature="e#1#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,6 +133,7 @@
     <findStrings>
       <find>cell1</find>
       <find>cell2</find>
+      <find>mask</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,7 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BinaryTree.py" />
         <option value="$PROJECT_DIR$/DijkstraColored.py" />
         <option value="$PROJECT_DIR$/Distances.py" />
         <option value="$PROJECT_DIR$/WIlsons_Demo.py" />
@@ -134,26 +156,21 @@
         <option value="$PROJECT_DIR$/Algorithms/__init__.py" />
         <option value="$PROJECT_DIR$/Foundations/__init__.py" />
         <option value="$PROJECT_DIR$/MazeDemos/__init__.py" />
-        <option value="$PROJECT_DIR$/AldousBroderDemo.py" />
         <option value="$PROJECT_DIR$/BinaryTreeDemo.py" />
         <option value="$PROJECT_DIR$/Cell.py" />
         <option value="$PROJECT_DIR$/ColoredGrid.py" />
         <option value="$PROJECT_DIR$/DijkstraDemo.py" />
         <option value="$PROJECT_DIR$/DistanceGrid.py" />
-        <option value="$PROJECT_DIR$/HKDemo.py" />
         <option value="$PROJECT_DIR$/LongestPath.py" />
         <option value="$PROJECT_DIR$/SidewinderDemo.py" />
         <option value="$PROJECT_DIR$/WIlsonsDemo.py" />
         <option value="$PROJECT_DIR$/HuntAndKill.py" />
-        <option value="$PROJECT_DIR$/ColoringDemo.py" />
         <option value="$PROJECT_DIR$/CountDeadends.py" />
         <option value="$PROJECT_DIR$/Grid.py" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Foundations/Cell.py" />
         <option value="$PROJECT_DIR$/Foundations/ColoredGrid.py" />
         <option value="$PROJECT_DIR$/Foundations/DistanceGrid.py" />
-        <option value="$PROJECT_DIR$/Foundations/Grid.py" />
         <option value="$PROJECT_DIR$/MazeDemos/AldousBroderDemo.py" />
         <option value="$PROJECT_DIR$/MazeDemos/BinaryTreeDemo.py" />
         <option value="$PROJECT_DIR$/MazeDemos/ColoringDemo.py" />
@@ -163,13 +180,26 @@
         <option value="$PROJECT_DIR$/MazeDemos/LongestPath.py" />
         <option value="$PROJECT_DIR$/MazeDemos/SidewinderDemo.py" />
         <option value="$PROJECT_DIR$/MazeDemos/WilsonsDemo.py.py" />
+        <option value="$PROJECT_DIR$/Algorithms/RecursiveBacktracker.py" />
+        <option value="$PROJECT_DIR$/Foundations/Cell.py" />
+        <option value="$PROJECT_DIR$/HKDemo.py" />
+        <option value="$PROJECT_DIR$/Foundations/Grid.py" />
+        <option value="$PROJECT_DIR$/AldousBroderDemo.py" />
+        <option value="$PROJECT_DIR$/RecBacDemo.py" />
+        <option value="$PROJECT_DIR$/WilsonsDemo.py.py" />
+        <option value="$PROJECT_DIR$/Algorithms/AldousBroder.py" />
+        <option value="$PROJECT_DIR$/Foundations/MaskedGrid.py" />
+        <option value="$PROJECT_DIR$/MaskDemo.py" />
+        <option value="$PROJECT_DIR$/ColoringDemo.py" />
+        <option value="$PROJECT_DIR$/Foundations/Mask.py" />
+        <option value="$PROJECT_DIR$/AsciiMask.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="835" />
-    <option name="width" value="1094" />
-    <option name="height" value="1039" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -197,7 +227,7 @@
             <path>
               <item name="Mazes" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mazes" type="462c0819:PsiDirectoryNode" />
-              <item name="MazeDemos" type="462c0819:PsiDirectoryNode" />
+              <item name="Output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -207,7 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MazeDemos/ColoringDemo.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AsciiMask.py" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -227,7 +257,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ColoredGrid">
+  <component name="RunManager" selected="Python.Ascii mask">
+    <configuration name="Ascii mask" type="PythonConfigurationType" factoryName="Python">
+      <module name="Mazes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\User\AppData\Local\Programs\Python\Python36-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AsciiMask.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="BinaryTree" type="PythonConfigurationType" factoryName="Python">
       <module name="Mazes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -240,7 +288,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MazeDemos/BinaryTreeDemo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BinaryTreeDemo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,11 +302,29 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\User\AppData\Local\Programs\Python\Python36-32\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MazeDemos" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MazeDemos/ColoringDemo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ColoringDemo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="HKdemo" type="PythonConfigurationType" factoryName="Python">
+      <module name="Mazes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\User\AppData\Local\Programs\Python\Python36-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HKDemo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -272,11 +338,29 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\User\AppData\Local\Programs\Python\Python36-32\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MazeDemos" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MazeDemos/HKDemo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HKDemo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="maskedgrid" type="PythonConfigurationType" factoryName="Python">
+      <module name="Mazes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\User\AppData\Local\Programs\Python\Python36-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MaskDemo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -285,6 +369,9 @@
     <list>
       <item itemvalue="Python.BinaryTree" />
       <item itemvalue="Python.ColoredGrid" />
+      <item itemvalue="Python.Ascii mask" />
+      <item itemvalue="Python.maskedgrid" />
+      <item itemvalue="Python.HKdemo" />
       <item itemvalue="Python.huntandkill" />
     </list>
   </component>
@@ -302,99 +389,69 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="668" y="0" width="875" height="831" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25900117" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2890625" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24213406" />
+      <window_info anchor="bottom" id="Python Console" order="8" />
+      <window_info active="true" anchor="right" id="Run" order="3" visible="true" weight="0.44921875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33287293" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.33287293" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39261284" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12695312" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24213406" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.14453125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3009576" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994528" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33287293" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="23" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Grid.py" />
-    <entry file="file://$PROJECT_DIR$/BinaryTree.py" />
-    <entry file="file://$PROJECT_DIR$/Grid.py" />
-    <entry file="file://$PROJECT_DIR$/BinaryTreeDemo.py" />
-    <entry file="file://$PROJECT_DIR$/Cell.py" />
-    <entry file="file://$PROJECT_DIR$/BinaryTree.py" />
-    <entry file="file://$PROJECT_DIR$/WIlsons_Demo.py" />
-    <entry file="file://$PROJECT_DIR$/MazeDemos/WIlsonsDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Foundations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/AldousBroder.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/AldousBroderDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Base36.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BinaryTreeDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ColoredGrid.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DijkstraDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -408,22 +465,8 @@
     <entry file="file://$PROJECT_DIR$/Distances.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/LongestPath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Sidewinder.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SidewinderDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WIlsonsDemo.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -446,30 +489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ColoringDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HKDemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CountDeadends.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -500,24 +519,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/AldousBroder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Algorithms/BinaryTree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithms/HuntAndKill.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -538,36 +543,8 @@
     <entry file="file://$PROJECT_DIR$/Foundations/Base36.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Foundations/Cell.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Foundations/ColoredGrid.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Foundations/DistanceGrid.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Foundations/Distances.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Foundations/Grid.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MazeDemos/AldousBroderDemo.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -627,10 +604,185 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MazeDemos/WilsonsDemo.py.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="20">
+          <caret line="1" column="38" lean-forward="true" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Foundations/DistanceGrid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4878">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Foundations/ColoredGrid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Foundations/Grid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="47" column="61" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
           <folding>
-            <element signature="e#1#28#0" expanded="true" />
+            <element signature="e#1#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Foundations/Cell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/HuntAndKill.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AldousBroderDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="e#1#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinaryTreeDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CountDeadends.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RecBacDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="e#1#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SidewinderDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WilsonsDemo.py.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DijkstraDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HKDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="e#1#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LongestPath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Foundations/MaskedGrid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+          <folding>
+            <element signature="e#1#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/RecursiveBacktracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/AldousBroder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ColoringDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <element signature="e#1#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Foundations/Mask.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MaskDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding>
+            <element signature="e#1#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AsciiMask.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#1#31#0" expanded="true" />
           </folding>
         </state>
       </provider>

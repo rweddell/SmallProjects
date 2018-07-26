@@ -9,25 +9,23 @@ class Grid(object):
     def __init__(self, rows, columns):
         self.rows = rows
         self.columns = columns
-        self.prepare_grid()
+        self.grid = self.prepare_grid()
         self.configure_cells()
         self.size = self.get_size()
 
     def __eq__(self, other):
-        if isinstance(other, self.__class__()):
+        if isinstance(other, type(self)):
             return self.deadends() == other.deadends()
         return False
 
     def __ne__(self, other):
-        if isinstance(other, self.__class__()):
+        if isinstance(other, type(self)):
             return self.deadends() != other.deadends()
         return True
     
     def prepare_grid(self):
-        self.grid = [[0 for x in range(self.rows)] for y in range(self.columns)]
-        for i in range(0, self.rows):
-            for j in range(0, self.columns):
-                self.grid[i][j] = Cell(i, j)
+        grid = [[Cell(x, y) for y in range(self.rows)] for x in range(self.columns)]
+        return grid
 
     def configure_cells(self):
         for line in self.grid:

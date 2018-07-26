@@ -15,4 +15,3 @@ class AldousBroder:
                 unvisited -= 1
             cell = neighbor
         return grid
-        
