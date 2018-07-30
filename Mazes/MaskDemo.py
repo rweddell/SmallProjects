@@ -1,4 +1,5 @@
 
+from Foundations.PolarGrid import PolarGrid
 from Foundations.Mask import Mask
 from Foundations.MaskedGrid import MaskedGrid
 from Algorithms.RecursiveBacktracker import RecursiveBacktracker as rb
@@ -24,8 +25,13 @@ harry = rb()
 
 grid = harry.on(MaskedGrid(temp))
 
-print(grid)
+#print(grid)
 
 img = grid.to_png()
 
 img.save('Output\maskdemo.png')
+
+grid = harry.on(PolarGrid(30, 30))
+#print(grid)
+img = grid.to_png()
+img.save('Output\\rounddemo.png')

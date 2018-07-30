@@ -13,6 +13,9 @@ class Grid(object):
         self.configure_cells()
         self.size = self.get_size()
 
+    def __getitem__(self, row):
+        return self.grid[row]
+
     def __eq__(self, other):
         if isinstance(other, type(self)):
             return self.deadends() == other.deadends()

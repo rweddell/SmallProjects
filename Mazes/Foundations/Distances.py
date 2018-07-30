@@ -7,17 +7,17 @@ class Distances:
         self.cells[root] = 0
         self.max_path()
         self.max_dist = 0
-        
+
+    def __getitem__(self, item):
+        return self.cells[item]
+
+    def keys(self):
+        return self.cells.keys()
+
     def get_dist(self, cell):
-        """
-        This is where the book overrides [] for ruby
-        """
         return self.cells[cell]
         
     def set_distance(self, cell, distance):
-        """
-        This is where the book overrides []= for ruby
-        """
         self.cells[cell] = distance
         
     def get_cells(self):

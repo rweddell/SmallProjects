@@ -9,7 +9,7 @@ class DistanceGrid(Grid):
         self.distlist = {}
 
     def contents_of(self, cell):
-        if self.distlist and cell in self.distlist.cells.keys():
-            return Base36.encode(self.distlist.cells[cell])
+        if self.distlist and cell in self.distlist.keys():
+            return Base36.encode(self.distlist[cell])
         else:
             return super().contents_of(cell)

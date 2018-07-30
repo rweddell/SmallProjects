@@ -11,6 +11,6 @@ start = grid.grid[round(grid.rows/2)][round(grid.columns/2)]
 
 grid.set_distances(start.distances())
 
-filename = "Output\coloredmaze3.png"
+filename = "Output\coloredmaze.png"
 img = grid.to_png()
 img.save(filename)

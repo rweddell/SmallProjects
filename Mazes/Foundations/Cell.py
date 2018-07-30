@@ -28,7 +28,7 @@ class Cell(object):
 
     def unlink(self, cell, bidi=True):
         del self.links[cell]
-        if bidi == True:
+        if bidi:
             cell.unlink(self, False)
 
     def list_links(self):
