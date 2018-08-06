@@ -9,8 +9,7 @@ class MaskedGrid(Grid):
         super().__init__(self.mask.rows, self.mask.columns)
 
     def prepare_grid(self):
-        #grid = [[Cell(x, y) for y in range(self.rows)] for x in range(self.columns)]
-        grid = [[None for y in range(self.rows)] for x in range(self.columns)]
+        grid = [[None for y in range(self.columns)] for x in range(self.rows)]
         for i in range(0, self.rows):
             for j in range(0, self.columns):
                 if self.mask.is_bit(i, j):
@@ -40,7 +39,7 @@ class MaskedGrid(Grid):
         """
         Creates a png file of maze
         :param size: 50 is default
-        :return: image object
+        :return: Image object
         """
         width = size * self.columns
         height = size * self.rows

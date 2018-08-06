@@ -27,7 +27,7 @@ class Grid(object):
         return True
     
     def prepare_grid(self):
-        grid = [[Cell(x, y) for y in range(self.rows)] for x in range(self.columns)]
+        grid = [[Cell(x, y) for y in range(self.columns)] for x in range(self.rows)]
         return grid
 
     def configure_cells(self):
@@ -105,7 +105,7 @@ class Grid(object):
         """
         width = size * self.columns
         height = size * self.rows
-        dimensions = (width, height)
+        dimensions = (height, width)
         bg = (255, 255, 255)
         wall = (0, 0, 0)
         img = Image.new('RGBA', dimensions, bg)

@@ -6,6 +6,6 @@ import random
 
 larry = BinaryTree()	
 
-grid = larry.on(Grid(5, 5))
+grid = larry.on(Grid(5, 8))
 
 print(grid)

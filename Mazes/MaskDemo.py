@@ -31,7 +31,7 @@ img = grid.to_png()
 
 img.save('Output\maskdemo.png')
 
-grid = harry.on(PolarGrid(30, 30))
+grid = harry.on(PolarGrid(10))
 #print(grid)
 img = grid.to_png()
 img.save('Output\\rounddemo.png')

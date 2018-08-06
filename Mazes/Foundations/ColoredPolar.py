@@ -1,10 +1,12 @@
 
-from Foundations.Grid import Grid
+from Foundations.PolarGrid import PolarGrid
+from Foundations.ColoredGrid import ColoredGrid
 
-class ColoredGrid(Grid):
 
-    def __init__(self, rows, columns):
-        super().__init__(rows, columns)
+class ColoredPolar(PolarGrid, ColoredGrid):
+
+    def __init__(self, rows):
+        PolarGrid.__init__(self, rows)
         self.farthest = None
         self.max_dist = None
         self.distlist = None
@@ -14,8 +16,8 @@ class ColoredGrid(Grid):
         self.farthest, self.max_dist = distances.max_path()
 
     def bg_color(self, cell):
-        distance = self.distlist.cells[cell]
-        intensity = (self.max_dist - distance)/self.max_dist
+        distance = self.distlist[cell]
+        intensity = (self.max_dist - distance) / self.max_dist
         dark = round(255 * intensity)
         bright = 128 + round(127 * intensity)
         return (bright, dark, dark)

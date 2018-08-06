@@ -23,7 +23,7 @@ class Cell(object):
 
     def link(self, cell, bidi=True):
         self.links[cell] = True
-        if bidi == True:
+        if bidi:
             cell.link(self, False)
 
     def unlink(self, cell, bidi=True):

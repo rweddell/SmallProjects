@@ -7,7 +7,7 @@ class Mask:
     def __init__(self, rows, columns):
         self.rows = rows-1
         self.columns = columns-1
-        self.bits = [[True for i in range(self.rows)] for j in range(self.columns)]
+        self.bits = [[True for i in range(self.columns)] for j in range(self.rows)]
 
     def is_bit(self, row, column):
         try:
@@ -27,6 +27,9 @@ class Mask:
                     total += 1
         return total
 
+    def __repr__(self):
+        return self.rows, self.columns
+
     def random_location(self):
         row = randint(0, self.rows)
         col = randint(0, self.columns)
@@ -35,12 +38,22 @@ class Mask:
             col = randint(0, self.columns)
         return row, col
 
+    def __str__(self):
+        stringy = ''
+        for row in self.bits:
+            for bit in row:
+                if bit is True:
+                    stringy += 'x'
+                else:
+                    stringy += ' '
+            stringy += '\n'
+        return stringy
+
 
 def from_txt(file):
     """
-    Note - an extra row and column is generated, not sure how to fix
-    :param file:
-    :return:
+    :param file(location of file):
+    :return: Mask
     """
     with open(file) as f:
         lines = f.readlines()
@@ -55,41 +68,35 @@ def from_txt(file):
                 mask.set_bit(i, j, False)
     return mask
 
-def from_png(file):
-    img = Image.open(file, 'r')
-    rows, columns = img.size
-    img = img.convert('RGB')
-    pix = img.load()
-    mask = Mask(rows, columns)
-    print(type(pix))
-    print(pix)
-    for i in range(0, rows-1):
-        for j in range(0, columns-1):
-            if pix[i, j] == (0, 0, 0):
-                mask.set_bit(j, i, value=False)
-    return mask
 
 def from_big_png(file):
     """
-    from_png can overflow memory with large png files. This takes 1/5 of a png file.
-    :param file:
-    :return:
+    1/10 scaled version of the png file
     """
-    img = Image.open(file, 'r')
-    rows, columns = img.width, img.height
-    img = img.convert('RGB')
+    img = Image.open(file)
+    rows, columns = img.height, img.width
     pix = img.load()
-    shortrows = round(rows/5)
-    shortcols = round(columns/5)
-    mask = Mask(shortcols, shortrows)
-    print(rows, columns)
-    print(type(pix))
-    print(pix)
-    for i in range(0, shortcols-1):
-        for j in range(0, shortrows-1):
+    smallrows = int((rows-1)/10)
+    smallcols = int((columns-1)/10)
+    mask = Mask(smallrows, smallcols)
+    for i in range(smallrows-1):
+        for j in range(smallcols-1):
+            ith, jth = int(i*10), int(j*10)
             try:
-                if i*5 < columns and j*5 < rows and pix[j*5, i*5] == (0, 0, 0):
+                if pix[jth, ith] == (0, 0, 0) and mask.is_bit(i, j) and ith < rows and jth < columns:
                     mask.set_bit(i, j, value=False)
             except:
                 pass
+    return mask
+
+
+def from_png(file):
+    img = Image.open(file)
+    rows, columns = img.height, img.width
+    pix = img.load()
+    mask = Mask(rows, columns)
+    for i in range(rows):
+        for j in range(columns):
+            if pix[j, i] == (0, 0, 0) and mask.is_bit(i, j):
+                mask.set_bit(i, j, value=False)
     return mask
