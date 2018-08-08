@@ -2,6 +2,7 @@ from PIL import Image, ImageDraw
 from Foundations.Grid import Grid
 from Foundations.Cell import Cell
 
+
 class MaskedGrid(Grid):
 
     def __init__(self, newmask):

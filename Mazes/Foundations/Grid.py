@@ -40,9 +40,15 @@ class Grid(object):
                 cell.west = self.borders(row, col - 1)
 
     def borders(self, row, column):
-        if row > self.rows - 1 or row < 0:
+        """
+        Checks to see if the cell is on the edge of the maze
+        :param row:
+        :param column:
+        :return:
+        """
+        if row < 0 or row > self.rows - 1:
             return None
-        if column > self.columns - 1 or column < 0:
+        if column < 0 or column > self.columns - 1:
             return None
         else:
             return self.grid[row][column]
@@ -78,23 +84,26 @@ class Grid(object):
                 east_bound = "|"
                 south_bound = "---"
                 corner = '+'
-                if cell.is_linked(cell.east):
+                if cell and cell.is_linked(cell.east):
                     east_bound = " "
                 line = line + body + east_bound
-                if cell.is_linked(cell.south):
+                if cell and cell.is_linked(cell.south):
                     south_bound = "   "
                 bottom = bottom + south_bound + corner
             output = output + line + "\n" + bottom + "\n"
         return output
         
     def __repr__(self):
-        return self.__str__()
+        return self.rows, self.columns
 
     def deadends(self):
+        """
+        :return: Count of dead ends in the maze
+        """
         count = 0
         for cell in self.each_cell():
             if len(cell.links) == 1:
-                count +=1
+                count += 1
         return count
     
     def to_png(self, size=50):

@@ -29,9 +29,9 @@ class PolarCell(Cell):
         return self.inward
 
     def neighbors(self):
-        list = []
-        if self.cw: list.append(self.cw)
-        if self.ccw: list.append(self.ccw)
-        if self.inward: list.append(self.inward)
-        list += self.outward
-        return list
+        nlist = []
+        if self.cw: nlist.append(self.cw)
+        if self.ccw: nlist.append(self.ccw)
+        if self.inward: nlist.append(self.inward)
+        nlist += self.outward
+        return nlist

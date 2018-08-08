@@ -14,8 +14,8 @@ class ColoredGrid(Grid):
         self.farthest, self.max_dist = distances.max_path()
 
     def bg_color(self, cell):
-        distance = self.distlist.cells[cell]
+        distance = self.distlist[cell]
         intensity = (self.max_dist - distance)/self.max_dist
         dark = round(255 * intensity)
         bright = 128 + round(127 * intensity)
-        return (bright, dark, dark)
+        return (dark, bright, dark)

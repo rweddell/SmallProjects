@@ -7,4 +7,4 @@ sylvester = RecursiveBacktracker()
 grid = sylvester.on(Grid(20,20))
 
 img = grid.to_png()
-img.save('Output\recursive.png')
+img.save('Output\\recursive.png')

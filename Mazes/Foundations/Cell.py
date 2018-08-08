@@ -53,6 +53,10 @@ class Cell(object):
         return nlist
         
     def distances(self):
+        """
+        Collects distances from self to all other cells in maze
+        :return: list of distances
+        """
         distlist = Distances(self)
         frontier = [self]
         while frontier:

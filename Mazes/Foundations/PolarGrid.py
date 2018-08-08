@@ -12,6 +12,12 @@ class PolarGrid(Grid):
         super().__init__(rows, 1)
 
     def retrieve(self, row, column):
+        """
+        Connects the ends of rows in a PolarGrid to the beginnings
+        :param row:
+        :param column:
+        :return: beginning/end of row or None
+        """
         if -2 < column < self.grid[row].__len__()+1:
             return self.grid[row][column % self.grid[row].__len__()]
         return None
@@ -47,8 +53,6 @@ class PolarGrid(Grid):
                 cell.cw = self.retrieve(row, col+1)
                 cell.cw = self.retrieve(row+1, col+1)
                 for neighbor in self.grid[row+1]:
-                    print(row+1, col +1)
-                    print(neighbor)
                     cell.outward.append(neighbor)
 
     def random_cell(self):
@@ -57,13 +61,17 @@ class PolarGrid(Grid):
         return self.grid[row][col]
 
     def to_png(self, cellsize=10):
+        """
+        Creates an Image object of the grid that can be saved to a png
+        :param cellsize: height of cell
+        :return: Image object
+        """
         imgsize = 2 * self.rows * cellsize
         bg = (255, 255, 255)
         wall = (0, 0, 0)
         img = Image.new('RGBA', (imgsize+1, imgsize+1), bg)
         drw = ImageDraw.Draw(img)
         center = imgsize/2
-
         for cell in self.each_cell():
             theta = (2 * pi)/self.grid[cell.row].__len__()
             inner_radius = cell.row * cellsize
@@ -79,21 +87,22 @@ class PolarGrid(Grid):
             cy = center + round(inner_radius * sin(theta_cw))
             dx = center + round(outer_radius * cos(theta_cw))
             dy = center + round(outer_radius * sin(theta_cw))
-            midx = center + round((outer_radius * cos(theta_ccw)+((bx - dx)/2))*1.2)
-            midy = center + round((outer_radius * sin(theta_ccw)+((by - dy)/2))*1.2)
+            # Trying to get the "peak" at point between cw and ccw
+            # midx = center + round((outer_radius * cos(theta_ccw)+((bx - dx)/2))*1.2)
+            # midy = center + round((outer_radius * sin(theta_ccw)+((by - dy)/2))*1.2)
             color = self.bg_color(cell)
             if color:
-                #midx = bx + ((bx-dx)/2)+2
-                #midy = by + ((by - dy)/2)+2
-                drw.polygon([(ax, ay), (bx, by), (midx, midy), (dx, dy), (cx, cy)], fill=color)
+                if cell.row == 0:
+                    drw.ellipse([(center-cellsize, center-cellsize), (center+cellsize, center+cellsize)], fill=color)
+                else:
+                    drw.polygon([(ax, ay), (bx, by), (dx, dy), (cx, cy)], fill=color)
+                    # TODO: Get rid of that last bit of white around the center of the circle
+                    #drw.chord([(bx, by), (dx, dy)], 0, 180, fill=color)
             if not cell.is_linked(cell.inward):
                 # TODO: Understand the trig to get ImageDraw.arc to work
                 # drw.arc([(bx, by), (dx, dy)], theta_ccw, theta_ccw + by - dy, fill=wall)
                 drw.line([(ax, ay), (cx, cy)], fill=wall, width=2)
             if not cell.is_linked(cell.cw):
                 drw.line([(cx, cy), (dx, dy)], fill=wall, width=3)
-
         drw.ellipse([(0, 0), (imgsize+1, imgsize+1)], outline=wall)
         return img
-
-

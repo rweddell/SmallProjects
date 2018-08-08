@@ -4,11 +4,9 @@ from Algorithms.AldousBroder import AldousBroder
 
 
 lester = AldousBroder()
-
 grid = lester.on(Grid(10, 10))
 
-print(grid)
+# print(grid)
 
 img = grid.to_png()
-
 img.save("Output\mazeimage.png")

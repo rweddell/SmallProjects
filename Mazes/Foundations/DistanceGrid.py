@@ -2,6 +2,7 @@
 import Foundations.Base36 as Base36
 from Foundations.Grid import Grid
 
+
 class DistanceGrid(Grid):
 
     def __init__(self, rows, columns):

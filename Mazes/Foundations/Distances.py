@@ -43,4 +43,4 @@ class Distances:
                 max_cell = cell
                 max_dist = self.cells[cell]
         self.max_dist = max_dist
-        return (max_cell, max_dist)
+        return max_cell, max_dist

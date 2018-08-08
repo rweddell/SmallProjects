@@ -20,4 +20,4 @@ class ColoredPolar(PolarGrid, ColoredGrid):
         intensity = (self.max_dist - distance) / self.max_dist
         dark = round(255 * intensity)
         bright = 128 + round(127 * intensity)
-        return (bright, dark, dark)
+        return (bright, dark, bright)
