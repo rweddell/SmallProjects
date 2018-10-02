@@ -60,7 +60,7 @@ class PolarGrid(Grid):
         col = randint(0, self.grid[row].__len__()-1)
         return self.grid[row][col]
 
-    def to_png(self, cellsize=10):
+    def to_png(self, cellsize=40):
         """
         Creates an Image object of the grid that can be saved to a png
         :param cellsize: height of cell
@@ -72,6 +72,9 @@ class PolarGrid(Grid):
         img = Image.new('RGBA', (imgsize+1, imgsize+1), bg)
         drw = ImageDraw.Draw(img)
         center = imgsize/2
+        # TODO: tweak the ellipse to make thicker lines. White fill/black png background?
+        drw.ellipse([(0, 0), (imgsize+1, imgsize+1)], fill=wall, outline=wall)
+        drw.ellipse([(2, 2), (imgsize-1, imgsize-1)], fill=bg, outline=wall)
         for cell in self.each_cell():
             theta = (2 * pi)/self.grid[cell.row].__len__()
             inner_radius = cell.row * cellsize
@@ -97,12 +100,12 @@ class PolarGrid(Grid):
                 else:
                     drw.polygon([(ax, ay), (bx, by), (dx, dy), (cx, cy)], fill=color)
                     # TODO: Get rid of that last bit of white around the center of the circle
-                    #drw.chord([(bx, by), (dx, dy)], 0, 180, fill=color)
+                    #drw.chord([(cx, cy), (dx, dy)], 0, 90, fill=color)
             if not cell.is_linked(cell.inward):
-                # TODO: Understand the trig to get ImageDraw.arc to work
-                # drw.arc([(bx, by), (dx, dy)], theta_ccw, theta_ccw + by - dy, fill=wall)
-                drw.line([(ax, ay), (cx, cy)], fill=wall, width=2)
+                # TODO: Understand the trig to get ImageDraw.arc to work.
+                # might not be possible with PIL.ImageDraw due to bounding boxes
+                #drw.arc([(bx, by), (dx, dy)], ax, cx, fill=wall)
+                drw.line([(ax, ay), (cx, cy)], fill=wall, width=4)
             if not cell.is_linked(cell.cw):
-                drw.line([(cx, cy), (dx, dy)], fill=wall, width=3)
-        drw.ellipse([(0, 0), (imgsize+1, imgsize+1)], outline=wall)
+                drw.line([(cx, cy), (dx, dy)], fill=wall, width=4)
         return img

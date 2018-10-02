@@ -52,7 +52,7 @@ class Cell(object):
             nlist.append(self.west)
         return nlist
         
-    def distances(self):
+    def get_distances(self):
         """
         Collects distances from self to all other cells in maze
         :return: list of distances
@@ -63,10 +63,10 @@ class Cell(object):
             new_frontier = []
             for current in frontier:
                 for cell in current.links:
-                    if cell in distlist.get_cells():
+                    if cell in distlist.keys():
                         pass
                     else:
-                        distlist.set_distance(cell, distlist.get_dist(current) + 1)
+                        distlist[cell] = distlist[current] + 1
                         new_frontier.append(cell)    
             frontier = new_frontier
         return distlist

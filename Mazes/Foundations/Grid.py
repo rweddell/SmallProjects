@@ -1,6 +1,6 @@
 
 from Foundations.Cell import Cell
-from random import randint
+from random import randint, shuffle, choice
 from PIL import Image, ImageDraw
 
 
@@ -13,8 +13,10 @@ class Grid(object):
         self.configure_cells()
         self.size = self.get_size()
 
-    def __getitem__(self, row):
-        return self.grid[row]
+    def __getitem__(self, index):
+        print(index)
+        print(self.rows, self.columns)
+        return self.grid[index]
 
     def __eq__(self, other):
         if isinstance(other, type(self)):
@@ -100,11 +102,11 @@ class Grid(object):
         """
         :return: Count of dead ends in the maze
         """
-        count = 0
+        deads = []
         for cell in self.each_cell():
             if len(cell.links) == 1:
-                count += 1
-        return count
+                deads.append(cell)
+        return deads
     
     def to_png(self, size=50):
         """
@@ -120,12 +122,13 @@ class Grid(object):
         img = Image.new('RGBA', dimensions, bg)
         drw = ImageDraw.Draw(img)
         for cell in self.each_cell():
-            x1 = cell.column * size
-            x2 = (cell.column+1) * size
-            y1 = cell.row * size
-            y2 = (cell.row+1) * size
+            x1 = int(cell.column * size)
+            x2 = int((cell.column+1) * size)
+            y1 = int(cell.row * size)
+            y2 = int((cell.row+1) * size)
             color = self.bg_color(cell)
             if color:
+                #print(x1, y2, x2, y2)
                 drw.rectangle(((x1, y1), (x2, y2)), color)
             if not cell.north:
                 drw.line(((x1, y1), (x2, y1)), wall, 5)
@@ -136,3 +139,15 @@ class Grid(object):
             if not cell.is_linked(cell.south):
                 drw.line(((x1, y2), (x2, y2)), wall, 5)
         return img
+
+    def braid(self, p=1.0):
+        ends = self.deadends()
+        shuffle(ends)
+        for cell in ends:
+            if len(cell.links) == 1:
+                neighbors = []
+                for neighbor in cell.neighbors():
+                    if not cell.is_linked(neighbor):
+                        neighbors.append(neighbor)
+                stranger = choice(neighbors)
+                cell.link(stranger)
