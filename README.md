@@ -1,2 +1,2 @@
 # RobWeddell
-School Projects from years at DePaul
+School Projects from years at DePaul University
