@@ -1,1 +1,1 @@
-School Projects from years at DePaul University
+School projects from years at DePaul University
