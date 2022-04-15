@@ -68,12 +68,12 @@ class TheGame:
                 player_turn = True
 
         if player_turn == False:
-            print(f'You win with a score of {self.score}')
+            print(f'You win with a score of {self.score}!')
         else:
             print(f'You lose with a score of {self.score}!')
 
-# down here you should initialize an instance of TheGame and call it's start_game function
+
 the_game = TheGame()
 
-# the_game.start_ai_game()
-the_game.start_pc_game()
+the_game.start_ai_game()
+# the_game.start_pc_game()
