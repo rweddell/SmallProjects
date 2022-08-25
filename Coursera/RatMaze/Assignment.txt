@@ -1,0 +1,213 @@
+Programming Assignment: Rat Race
+
+Preface
+Learning activities
+By the end of this assignment, you will have
+
+Implemented two classes that interact
+
+Practiced using nested lists
+
+Practiced writing loops and if statements
+
+Practiced testing
+
+Required Preparation
+This handout assumes that you have watched all the week 5 videos. 
+
+No printing!
+Don't call function print anywhere in your code. By now, you should be using the visualizer or the debugger to figure out what your code is doing.
+
+main Problem Domain: a Rat Race game
+Overview
+This assignment has you write a two-player rat race game. Jen and Paul are rats caught in a maze, and they frantically run around and eat Brussels sprouts.
+
+The maze
+Here is a sample maze:
+
+623451
+    #######
+    #.....#
+    #.###.#
+    #..@#.#
+    #@#.@.#
+    #######
+# is a wall, . is a hallway, and @ is a Brussels sprout.
+
+Here is the same maze with Jen shown (J) in the upper-left corner at row 1 and column 1, and Paul (P) near the upper-right at row 1 and column 4:
+
+123456
+    #######
+    #J..P.#
+    #.###.#
+    #..@#.#
+    #@#.@.#
+    #######
+Controls
+The players will move the rats around using the keyboard.  Here are the controls; both have the classic "inverted T" layout:
+
+        J   P
+up      w   i
+down    s   k
+left    a   j 
+right   d   l 
+
+
+Game play
+The players move Jen and Paul around the maze. They cannot move into walls. If the players try to move the rats into walls, the rats do not move. Both Jen and Paul can occupy the same space, although if this happens only one of them will be shown on the maze. (It doesn't matter which one.)
+
+When they move over a Brussels sprout they eat it and the Brussels sprout character @ is replaced by the hallway character . . Each rat keeps track of how many Brussels sprouts it has eaten. When there are no Brussels sprouts left, the game ends. The players can still move the rats around the maze, but there will not be any more Brussels sprouts to eat and so the scores will not change.
+
+What to do
+Step 1: Download and read the main.py starter code:
+
+Constants
+As you read the starter code, you will see several constants. Constants are variables whose values should never change: once a constant is assigned a value, it should not be assigned a different value elsewhere in the program. Following the standard Python style, constants are named with uppercase letters to distinguish them from other variables.
+
+The starter code has the following constants: WALL, HALL, SPROUT, LEFT, RIGHT, NO_CHANGE, UP, DOWN, RAT_1_CHAR, and RAT_2_CHAR. Rather than use a string like '@' in your code, use the constant, SPROUT, that refers to that value.  This way, you can easily change the character to display.
+
+Step 2: Write class Rat's methods.
+In class Rat in main.py, write the following methods. We strongly recommend that you follow the Function Design Recipe and start by writing example calls on these methods!
+
+Here are the method specifications; the descriptions appear below.
+
+Method name:(Parameter types) -> Return type
+​
+
+__init__:(Rat, str, int, int) -> NoneType
+
+set_location:(Rat, int, int) -> NoneType
+ 
+eat_sprout:(Rat) -> NoneType
+
+__str__:(Rat) -> str
+
+ 
+
+Method __init__(Rat, str, int, int)
+The first parameter represents the rat to be initialized, the second parameter represents the 1-character symbol for the rat, the third parameter represents the row where the rat is located, and the fourth parameter represents the column where the rat is located.
+
+Initialize the rat's four instance variables:
+
+symbol: the 1-character symbol for the rat
+
+row: the row where the rat is located
+
+col: the column where the rat is located
+
+num_sprouts_eaten: the number of sprouts that this rat has eaten, which is initially 0.
+
+Here is an example constructor call: Rat('P', 1, 4)
+
+Method set_location(Rat, int, int)
+The first parameter represents a rat, the second represents a row, and the third represents a column. Set the rat's row and col instance variables to the given row and column.
+
+Method eat_sprout(Rat)
+The first parameter represents a rat. Add one to the rat's instance variable num_sprouts_eaten. Yuck.
+
+Method __str__(Rat)
+The parameter represents a rat. Return a string representation of the rat, in this format:
+
+symbol at (row, col) ate num_sprouts_eaten sprouts.
+
+For example:
+
+'J at (4, 3) ate 2 sprouts.'
+
+Do not put a newline character (\n) at the end of the string.
+
+Step 3: Write class Maze's methods.
+In class Maze in main.py, write the following methods. We strongly recommend that you follow the Function Design Recipe and start by writing example calls on these methods!
+
+Method name:(Parameter types) -> Return type
+
+__init__:(Maze, list of list of str, Rat, Rat) -> NoneType
+
+is_wall:(Maze, int, int) -> bool
+
+get_character:(Maze, int, int) -> str
+​
+move:(Maze, Rat, int, int) ->bool
+
+__str__:(Maze) -> str
+
+​
+ 
+
+Method __init__(Maze, list of list of str, Rat, Rat))
+The first paramter represents the maze to be initialized, the second parameter represents the contents of the maze, the third parameter represents the first rat in the maze, and the fourth parameter represents the second rat in the maze.
+
+Initialize this maze's four instance variables:
+
+maze: a maze with contents specified by the second parameter.
+
+rat_1: the first rat in the maze.
+
+rat_2: the second rat in the maze.
+
+num_sprouts_left: the number of uneaten sprouts in this maze.
+
+Here is an example call:
+
+12345678
+Maze([['#', '#', '#', '#', '#', '#', '#'], 
+      ['#', '.', '.', '.', '.', '.', '#'], 
+      ['#', '.', '#', '#', '#', '.', '#'], 
+      ['#', '.', '.', '@', '#', '.', '#'], 
+      ['#', '@', '#', '.', '@', '.', '#'], 
+      ['#', '#', '#', '#', '#', '#', '#']], 
+      Rat('J', 1, 1),
+      Rat('P', 1, 4))
+Notice that the rat symbols do not appear in the list of list of str.
+
+Method is_wall(Maze, int, int)
+The first parameter represents a maze, the second represents a row, and the third represents a column.
+
+Return True if and only if there is a wall at the given row and column of the maze.
+
+Method get_character(Maze, int, int)
+The first parameter represents a maze, the second represents a row, and the third represents a column.
+
+Return the character in the maze at the given row and column. If there is a rat at that location, then its character should be returned rather than HALL.
+
+Method move(Maze, Rat, int, int)
+The first parameter represents a maze, the second represents a rat, the third represents a vertical direction change (UP, NO_CHANGE or DOWN), and the fourth represents a horizontal direction change (LEFT, NO_CHANGE or RIGHT).
+
+Move the rat in the given direction, unless there is a wall in the way. Also, check for a Brussels sprout at that location and, if present:
+
+have the rat eat the Brussels sprout,
+
+make that location a HALL, and
+
+decrease the value that num_sprouts_left refers to by one.
+
+Return True if and only if there wasn't a wall in the way.
+
+Method __str__(Maze)
+
+The parameter represents a maze. Return a string representation of the maze, using the format shown in this example:
+
+12345678
+#######
+#J..P.#
+#.###.#
+#..@#.#
+#@#.@.#
+#######
+J at (1, 1) ate 0 sprouts.
+P at (1, 4) ate 0 sprouts.
+Do not put a newline character (\n) at the end of the string.
+
+Step 4: Download rat_race.py.
+Here is the code that you will use to display the graphical user interface (GUI) for your game and to handle the keyboard input:
+
+
+We provided one sample maze, but the possibilities are endless. A maze must:
+
+be rectangular,
+
+the outside edges must be made up entirely of WALLs, and
+
+the rest of the maze must be made up of WALLs, HALLs, SPROUTs, RAT_1_CHAR, and RAT_2_CHAR.
+
+

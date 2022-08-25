@@ -1,1 +1,1 @@
-School projects from years at DePaul University
+Projects from time as a student as well as continued learning
